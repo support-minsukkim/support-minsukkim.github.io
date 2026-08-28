@@ -26,4 +26,4 @@ node scripts/gen-legal-html.mjs <이 레포 경로>
 | 개인정보 처리방침 | https://support-minsukkim.github.io/namuldogam/privacy.html | Play 스토어 등록정보 처리방침 URL |
 | 이용약관 | https://support-minsukkim.github.io/namuldogam/terms.html | 참고 |
 
-배포: main 브랜치 / namuldogam 디렉터리. 운영: Minsuk Kim · 91minseokkim@gmail.com
+배포: main 브랜치 / namuldogam 디렉터리. 운영: Minsuk Kim · support.minsukkim@gmail.com

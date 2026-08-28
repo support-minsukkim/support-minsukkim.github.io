@@ -17,4 +17,4 @@ their privacy, terms, support, and deletion documents within that directory.
 GitHub Pages publishes the `main` branch from the repository root. The site is
 static and uses no analytics, tracking scripts, cookies, or form submissions.
 
-Contact: 91minseokkim@gmail.com
+Contact: support.minsukkim@gmail.com
