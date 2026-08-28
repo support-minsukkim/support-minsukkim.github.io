@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arrivo 개인정보 처리방침</title>
+  <meta name="description" content="Arrivo 개인정보 처리방침: 백그라운드 위치, 기기 내 저장, CSV 공유, 삭제, 광고 정책 안내.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://support-minsukkim.github.io/arrivo/privacy.html">
+  <style>
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo",sans-serif; color:#221d18; background:#faf7f2; line-height:1.7; }
+    main, nav, footer { max-width:880px; margin:0 auto; padding:28px 20px; }
+    main { background:#fffdf9; border:1px solid #e8e1d6; border-radius:24px; margin-top:24px; }
+    h1 { font-size:38px; line-height:1.15; margin:0 0 12px; letter-spacing:-.04em; color:#b5451a; }
+    h2 { margin-top:32px; }
+    a { color:#b5451a; font-weight:700; }
+    footer { color:#5f574d; font-size:14px; }
+  </style>
+</head>
+<body>
+  <nav><a href="index.html">← Arrivo</a></nav>
+  <main>
+    <h1>Arrivo 개인정보 처리방침</h1>
+    <p><strong>최종 갱신:</strong> 2026-08-28</p>
+
+    <h2>앱 및 개발자 정보</h2>
+    <ul>
+      <li>앱: Arrivo (패키지/번들 ID <code>com.geotime.recorder</code>, Android·iOS)</li>
+      <li>개발자: Minsuk Kim (개인)</li>
+      <li>문의: <a href="mailto:91minseokkim@gmail.com">91minseokkim@gmail.com</a></li>
+    </ul>
+
+    <h2>앱이 하는 일</h2>
+    <p>Arrivo는 사용자가 위도·경도·반경으로 장소를 저장하면, 자동 기록을 켠 경우 기기가 해당 지오펜스 경계를 들어오고 나가는 시각을 자동으로 기록하는 개인 시간 기록 앱입니다. 계정·회원가입·로그인이 없으며, 모든 기록은 사용자 기기 안에만 저장됩니다.</p>
+
+    <h2>수집·생성되는 데이터</h2>
+    <ul>
+      <li><strong>저장된 장소</strong>: 장소 이름, 위도, 경도, 반경, 활성 상태, 생성/수정 시각.</li>
+      <li><strong>위치 기반 시간 기록</strong>: 장소 이름, 입장/이탈 구분, 이벤트 시각, 자동/수동 여부. 사용자는 기록을 수동으로 보정할 수 있습니다.</li>
+      <li><strong>리포트 설정</strong>: 선택한 리포트 기간(오늘/최근 7일/맞춤 기간)과 저장한 리포트 프리셋 — 리포트 화면 일관성을 위해 기기에만 저장됩니다.</li>
+      <li><strong>가져오기/내보내기 파일</strong>: 장소 CSV는 사용자가 파일을 직접 선택할 때만 읽고, 기록·체류 요약·월간 리포트 CSV/PDF는 사용자가 내보내기/공유를 누를 때만 생성됩니다.</li>
+      <li><strong>로컬 베타 지표 카운터</strong>: 장소 생성·권한 완료·업셀 노출 등 제품 검증용 카운트. 기기 안에만 저장되며 사용자가 직접 CSV로 공유하지 않는 한 전송되지 않습니다.</li>
+      <li><strong>광고 SDK 기술 데이터</strong>: Google AdMob이 광고 로드에 필요한 기기·앱·네트워크 데이터를 처리할 수 있습니다. Arrivo는 비개인화 광고(npa=1) 배너만 요청하며, 광고 요청에 좌표·지오펜스 데이터를 전달하지 않습니다.</li>
+    </ul>
+
+    <h2>백그라운드 위치 사용</h2>
+    <p>Arrivo는 백그라운드 위치를 오직 핵심 기능 — 사용자가 직접 설정한 장소의 자동 입장/이탈 시각 기록 — 에만 사용합니다. 백그라운드 위치 권한을 허용하면 앱이 닫혀 있거나 사용 중이 아닐 때도 저장된 지오펜스 경계를 모니터링할 수 있습니다.</p>
+    <p><strong>위치 데이터는 광고 타게팅이나 분석 목적에 사용하지 않습니다.</strong></p>
+
+    <h2>추적(Tracking) 없음 — iOS</h2>
+    <p>iOS 앱은 사용자를 추적하지 않습니다. IDFA를 사용하지 않고, 앱 추적 투명성(ATT) 프롬프트도 표시하지 않으며, 프라이버시 매니페스트의 <code>NSPrivacyTracking</code>은 false입니다. 광고에는 IP 기반의 대략적(국가/도시 수준) 위치가 Google에 의해 추정될 수 있으나, 이는 모든 광고 전송의 기본 동작이며 앱이 정밀 위치를 광고에 제공하는 것이 아닙니다.</p>
+
+    <h2>저장과 공유</h2>
+    <ul>
+      <li>저장된 장소와 시간 기록은 기기 내 저장소에만 보관됩니다. 클라우드 백업·계정 동기화는 제공하지 않습니다(Android Auto Backup 비활성).</li>
+      <li>기록과 설정은 사용자가 삭제하거나, CSV를 직접 가져오거나, CSV/PDF를 직접 공유하지 않는 한 기기 밖으로 나가지 않습니다.</li>
+      <li>내보내기는 각 플랫폼의 시스템 공유 시트를 사용하며, 사용자가 공유 대상을 선택한 이후에는 해당 대상의 개인정보 처리방침이 적용됩니다.</li>
+    </ul>
+
+    <h2>보존과 삭제</h2>
+    <p>무료 사용자는 앱에서 최근 30일 기록을 보며, 그보다 오래된 로컬 기록은 삭제 전까지 기기에 남을 수 있습니다. 사용자는 앱 안에서 개별 기록 수정·삭제, 오래된 기록 일괄 삭제(30일/90일/1년 기준), 전체 기록 삭제, 저장된 장소·기록 전체 삭제를 할 수 있습니다. 전체 삭제 시 지오펜스 자동 등록과 로컬 베타 지표 카운터도 함께 제거됩니다. 자세한 절차는 <a href="data-deletion.html">데이터 삭제 안내</a>를 참고하세요.</p>
+
+    <h2>광고와 결제</h2>
+    <p>무료 버전에는 AdMob 배너 광고가 포함됩니다. 필요한 지역에서는 Google UMP 동의를 받기 전까지 광고를 요청하지 않으며, 광고 개인정보 선택 관리 진입점을 제공합니다. 프리미엄 사용자에게는 광고가 표시되지 않습니다. 부적절한 광고는 <a href="ad-report.html">광고 신고 페이지</a>에서 신고할 수 있습니다.</p>
+    <p>프리미엄 구독 결제는 Apple App Store / Google Play의 스토어 결제 시스템으로만 처리되며, 개발자는 카드 정보 등 결제 수단 정보를 수집하지 않습니다.</p>
+
+    <h2>아동의 데이터</h2>
+    <p>이 앱은 아동을 대상으로 설계되지 않았습니다. 대상 연령이 변경되는 경우 각 스토어의 아동·가족 정책 요건을 출시 전에 재검토합니다.</p>
+
+    <h2>방침 변경</h2>
+    <p>이 방침이 변경되면 이 페이지에 게시하고 최종 갱신 날짜를 업데이트합니다. 중요한 변경은 앱 업데이트 노트에 함께 표기합니다.</p>
+
+    <h2>문의</h2>
+    <p>개인정보 관련 문의: <a href="mailto:91minseokkim@gmail.com">91minseokkim@gmail.com</a></p>
+  </main>
+  <footer>© 2026 Minsuk Kim · Arrivo (com.geotime.recorder)</footer>
+</body>
+</html>

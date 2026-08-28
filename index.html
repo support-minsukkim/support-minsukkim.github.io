@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minsuk Kim · App Support</title>
+  <meta name="description" content="Minsuk Kim이 제공하는 앱의 지원, 개인정보 처리방침 및 이용약관입니다.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://support-minsukkim.github.io/">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172033;
+      --ivory: #f7f3ec;
+      --paper: #fffdf8;
+      --sage: #93b5a4;
+      --coral: #e98770;
+      --line: #ddd8cf;
+      --muted: #667085;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--ivory);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", sans-serif;
+      line-height: 1.65;
+    }
+    main, footer { width: min(920px, calc(100% - 40px)); margin: 0 auto; }
+    main { padding: 72px 0 40px; }
+    header { max-width: 640px; margin-bottom: 44px; }
+    .eyebrow { margin: 0 0 10px; color: var(--muted); font-size: 14px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    h1 { margin: 0; font-size: clamp(38px, 7vw, 68px); line-height: 1.02; letter-spacing: -.05em; }
+    .intro { margin: 20px 0 0; color: var(--muted); font-size: 18px; }
+    .apps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    article { min-height: 260px; padding: 24px; border: 1px solid var(--line); border-radius: 24px; background: var(--paper); }
+    article::before { display: block; width: 36px; height: 6px; margin-bottom: 28px; border-radius: 99px; background: var(--sage); content: ""; }
+    article:nth-child(2)::before { background: var(--coral); }
+    article:nth-child(3)::before { background: var(--ink); }
+    h2 { margin: 0 0 8px; font-size: 25px; letter-spacing: -.03em; }
+    article p { min-height: 54px; margin: 0 0 24px; color: var(--muted); }
+    nav { display: grid; gap: 8px; }
+    a { color: var(--ink); font-weight: 700; text-underline-offset: 4px; }
+    footer { padding: 24px 0 48px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+    footer a { color: inherit; }
+    @media (max-width: 760px) {
+      main { padding-top: 48px; }
+      .apps { grid-template-columns: 1fr; }
+      article { min-height: auto; }
+      article p { min-height: auto; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">App support</p>
+      <h1>Minsuk Kim</h1>
+      <p class="intro">앱별 지원 안내와 개인정보 처리방침, 이용약관을 확인할 수 있습니다.</p>
+    </header>
+
+    <section class="apps" aria-label="앱 지원 목록">
+      <article>
+        <h2>Arrivo</h2>
+        <p>장소의 도착과 이탈 시간을 기록하는 개인 시간 기록 도구입니다.</p>
+        <nav aria-label="Arrivo 문서">
+          <a href="arrivo/">지원</a>
+          <a href="arrivo/privacy.html">개인정보 처리방침</a>
+          <a href="arrivo/terms.html">이용약관</a>
+        </nav>
+      </article>
+
+      <article>
+        <h2>Mandra</h2>
+        <p>만다라트 방식으로 목표와 실행 항목을 정리하는 도구입니다.</p>
+        <nav aria-label="Mandra 문서">
+          <a href="mandra/">지원</a>
+          <a href="mandra/privacy.html">개인정보 처리방침</a>
+          <a href="mandra/terms.html">이용약관</a>
+        </nav>
+      </article>
+
+      <article>
+        <h2>나물대사전</h2>
+        <p>나물 정보와 개인 기록을 관리하는 생활 도감 앱입니다.</p>
+        <nav aria-label="나물대사전 문서">
+          <a href="namuldogam/">지원</a>
+          <a href="namuldogam/privacy.html">개인정보 처리방침</a>
+          <a href="namuldogam/terms.html">이용약관</a>
+        </nav>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    문의: <a href="mailto:91minseokkim@gmail.com">91minseokkim@gmail.com</a>
+  </footer>
+</body>
+</html>
