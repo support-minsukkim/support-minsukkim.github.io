@@ -1,11 +1,12 @@
 {
   "schemaVersion": 1,
   "source": "src/content/legalContent.js",
-  "sourceSha256": "817e4e6e5ad573ea65eaf4da241e59b5d20d6ff10a6f076ad813e9bb37bfe2ec",
+  "sourceSha256": "65c2c9bc73b6967067de82171fd8dcf67a575cea7eb3701314a72e8f20c2ee3a",
   "appName": "나물대사전",
   "operatorName": "Minsuk Kim",
   "contactEmail": "support.minsukkim@gmail.com",
   "effectiveDate": "2026-08-30",
+  "effectiveDateLabel": "2026년 8월 30일",
   "siteUrl": "https://support-minsukkim.github.io/namuldogam/",
   "generatedFiles": [
     "account-deletion.html",
