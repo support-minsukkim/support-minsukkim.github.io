@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "source": "src/content/legalContent.js",
+  "sourceSha256": "817e4e6e5ad573ea65eaf4da241e59b5d20d6ff10a6f076ad813e9bb37bfe2ec",
+  "appName": "나물대사전",
+  "operatorName": "Minsuk Kim",
+  "contactEmail": "support.minsukkim@gmail.com",
+  "effectiveDate": "2026-08-30",
+  "siteUrl": "https://support-minsukkim.github.io/namuldogam/",
+  "generatedFiles": [
+    "account-deletion.html",
+    "index.html",
+    "privacy-choices.html",
+    "privacy.html",
+    "terms.html"
+  ],
+  "externalLinks": [
+    "https://policies.google.com/privacy",
+    "https://policies.google.com/technologies/partner-sites",
+    "https://support.google.com/admob/answer/10107561",
+    "https://firebase.google.com/support/privacy",
+    "https://developer.apple.com/app-store/user-privacy-and-data-use/",
+    "https://sentry.io/privacy/"
+  ]
+}
