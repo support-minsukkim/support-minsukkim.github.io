@@ -24,6 +24,13 @@ node scripts/assert-legal-site.mjs <이 레포 경로>/namuldogam src/content/le
 위 명령은 파일만 생성·검증하며 push 또는 Pages 배포를 하지 않습니다. 공개 반영은 서명된 앱,
 스토어/AdMob 제출값과 함께 별도 승인된 cutover에서 수행합니다.
 
+실제 공개일·앱 제출일에는 원천의 `effectiveDate`와 `effectiveDateLabel`을 함께 갱신한 뒤 다시
+생성해야 합니다. auditor는 날짜 표기, 원천 SHA-256과 생성물의 일치를 함께 검사합니다.
+
+현재 무료 로컬 보관 v1은 일기·위치 좌표/주소·사진을 담는 whole-file versioned JSON입니다.
+지도 스냅샷 파일은 제외되며 좌표로 재생성될 수 있습니다. CRC는 손상 탐지 전용이고 암호화나
+위변조 인증을 제공하지 않습니다.
+
 ## URL
 
 | 페이지 | URL | 용도 |
