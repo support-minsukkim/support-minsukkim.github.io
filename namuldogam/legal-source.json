@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "src/content/legalContent.js",
-  "sourceSha256": "198d1277ec8c1f14ec798d0a4c7c9001571c98635179ba58e7b266f595a18145",
+  "sourceSha256": "baf477ac2f459d99a414905cb1177dfc108ad7d429d76246b4a3c680eab251fd",
   "appName": "나물대사전",
   "operatorName": "Minsuk Kim",
   "contactEmail": "support.minsukkim@gmail.com",
