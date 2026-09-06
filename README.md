@@ -8,6 +8,7 @@ documents covering apps published by Minsuk Kim.
 - [Arrivo](https://support-minsukkim.github.io/arrivo/)
 - [Mandra](https://support-minsukkim.github.io/mandra/)
 - [Namuldogam](https://support-minsukkim.github.io/namuldogam/)
+- [Kkomullog](https://support-minsukkim.github.io/kkomullog/)
 
 Future apps should use a stable top-level path such as `/<app-slug>/` and keep
 their privacy, terms, support, and deletion documents within that directory.
