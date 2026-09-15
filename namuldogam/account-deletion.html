@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="robots" content="index,follow"/>
-  <meta name="legal-source-sha256" content="baf477ac2f459d99a414905cb1177dfc108ad7d429d76246b4a3c680eab251fd"/>
+  <meta name="legal-source-sha256" content="9fd82804dd109c18301b4e0451c7552347a2c4f51b65b2ea1a69b614f60f5fe2"/>
   <title>기존 계정 및 데이터 삭제 · 나물대사전</title>
   <link rel="canonical" href="https://support-minsukkim.github.io/namuldogam/account-deletion.html"/>
   <style>
@@ -30,26 +30,23 @@
   <main class="wrap">
     <div class="brand">🌿 나물대사전</div>
     <h1>기존 계정 및 데이터 삭제</h1>
-    <div class="meta">시행일: 2026-08-30 · 운영: Minsuk Kim</div>
+    <div class="meta">시행일: 2026-09-15 · 운영: Minsuk Kim</div>
     <article class="card">
 <section><h2>이 안내가 필요한 경우</h2>
-<p>최신 나물대사전은 신규 클라우드 백업·복원·동기화를 제공하지 않지만, 이전 버전에서 Firebase 백업 계정을 사용한 이용자의 삭제권을 계속 지원합니다. 일반 도감·로컬 일기 이용만 했고 온라인 계정을 만든 적이 없다면 삭제할 클라우드 계정이 없습니다.</p>
+<p>최신 나물대사전은 클라우드 백업·로그인·계정 기능을 제공하지 않습니다. 이전 버전에서 Firebase 백업 계정을 사용한 이용자의 온라인 데이터와 계정은 2026년 9월 15일 기준 운영자가 모두 삭제했습니다(계정 0개 확인). 일반 도감·로컬 일기 이용만 했고 온라인 계정을 만든 적이 없다면 삭제할 클라우드 계정이 없습니다.</p>
 </section>
-<section><h2>앱에서 직접 삭제</h2>
-<p>1. 나물대사전 &gt; 설정 &gt; 기존 클라우드 데이터 삭제로 이동합니다.<br/>2. 예전에 사용한 Apple 또는 Google 계정으로 삭제 대상 계정을 확인합니다.<br/>3. 확인 창에서 온라인 일기·위치·사진과 백업 계정이 삭제되어 복구할 수 없고 이 기기의 일기·사진은 남는다는 안내를 읽은 뒤 영구 삭제를 누릅니다.<br/>4. 완료 안내가 나올 때까지 앱을 닫거나 계정을 바꾸지 않습니다.</p>
+<section><h2>앱 내 삭제 메뉴 종료</h2>
+<p>이전 버전의 설정 &gt; 기존 클라우드 데이터 삭제 메뉴는 삭제할 대상이 남아 있지 않아 최신 버전에서 제거되었습니다. Firebase Authentication의 로그인 제공자를 비활성화해 이미 설치된 이전 버전 앱에서 로그인해도 새 계정이나 업로드가 만들어지지 않습니다.</p>
 </section>
 <section><h2>이메일로 삭제 요청</h2>
-<p>앱에 접근할 수 없으면 support.minsukkim@gmail.com으로 “나물대사전 기존 클라우드 데이터 삭제”를 요청해 주세요. 예전에 사용한 계정의 제공자(Apple 또는 Google)와 이메일을 알려 주되 비밀번호·인증코드는 보내지 마세요. 운영자는 본인 확인에 필요한 최소 정보만 추가 요청하고 지체 없이 처리합니다.</p>
+<p>본인의 온라인 데이터가 남아 있다고 생각되면 support.minsukkim@gmail.com으로 “나물대사전 기존 클라우드 데이터 삭제”를 요청해 주세요. 예전에 사용한 계정의 제공자(Apple 또는 Google)와 이메일을 알려 주되 비밀번호·인증코드는 보내지 마세요. 운영자는 본인 확인에 필요한 최소 정보만 추가 요청하고 지체 없이 처리합니다.</p>
 </section>
-<section><h2>삭제되는 온라인 데이터</h2>
-<p>• Firebase Realtime Database의 diary/{uid}: 기존 일기 본문·날짜·활동 유형·연결한 나물·위치 좌표·주소·사진 경로<br/>• Firebase Storage의 diary/{uid}/**: 기존 온라인 일기 사진<br/>• Firebase Authentication 계정: Firebase uid, 제공자 연결과 이메일(제공된 경우)</p>
-<p>삭제 순서 중 어떤 단계에서 오류가 나면 그 뒤의 계정 삭제를 무리하게 진행하지 않습니다. 일부 단계가 이미 끝난 뒤에도 같은 계정으로 재시도할 수 있으며, 이미 삭제된 항목은 안전하게 건너뜁니다.</p>
+<section><h2>삭제된 온라인 데이터</h2>
+<p>• Firebase Realtime Database의 diary/{uid}: 이전 일기 본문·날짜·활동 유형·연결한 나물·위치 좌표·주소·사진 경로<br/>• Firebase Storage의 diary/{uid}/**: 이전 온라인 일기 사진<br/>• Firebase Authentication 계정: Firebase uid, 제공자 연결과 이메일(제공된 경우)</p>
+<p>위 항목은 2026년 9월 15일 기준 모두 삭제되었으며 운영자는 별도의 보관본을 만들지 않았습니다.</p>
 </section>
 <section><h2>삭제되지 않는 데이터와 별도 보유기간</h2>
-<p>• 이 기기의 일기와 사진은 삭제되지 않습니다. 온라인 계정 삭제 뒤에도 앱에서 별도로 관리·삭제해야 합니다.<br/>• Firebase Analytics 사용자·이벤트 수준 데이터는 운영자 설정 기준 최대 14개월, Sentry 오류·성능 이벤트는 최대 90일 보관될 수 있습니다. 이는 클라우드 일기 계정과 별도의 SDK 처리이며, 광고·분석 데이터는 Google·Sentry 정책과 이용자 선택에 따라 처리됩니다.<br/>• 법적 의무·보안·분쟁 대응을 위해 별도 보존이 필요한 기록은 해당 목적과 기간에 한해 보관한 뒤 삭제합니다.</p>
-</section>
-<section><h2>처리 중 오류가 난 경우</h2>
-<p>온라인 데이터 일부가 먼저 삭제된 뒤 네트워크 또는 인증 오류가 발생할 수 있습니다. 이 경우 로그인 상태와 재시도 경로를 유지하며, 동일한 계정으로 다시 실행하면 남은 항목부터 안전하게 완료할 수 있습니다. 다른 계정으로 바꾸지 말고 문제가 계속되면 support.minsukkim@gmail.com으로 문의해 주세요.</p>
+<p>• 이 기기의 일기와 사진은 삭제되지 않습니다. 앱에서 별도로 관리·삭제해야 합니다.<br/>• Firebase Analytics 사용자·이벤트 수준 데이터는 운영자 설정 기준 최대 14개월, Sentry 오류·성능 이벤트는 최대 90일 보관될 수 있습니다. 이는 클라우드 일기 계정과 별도의 SDK 처리이며, 광고·분석 데이터는 Google·Sentry 정책과 이용자 선택에 따라 처리됩니다.<br/>• 법적 의무·보안·분쟁 대응을 위해 별도 보존이 필요한 기록은 해당 목적과 기간에 한해 보관한 뒤 삭제합니다.</p>
 </section>
     </article>
     <footer>
