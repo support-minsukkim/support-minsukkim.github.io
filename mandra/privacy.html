@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mandra 개인정보 처리방침</title>
-  <meta name="description" content="Mandra 개인정보 처리방침: 기기 내 저장, 수집 없음, 온디바이스 진단, 로컬 알림 안내.">
+  <meta name="description" content="Mandra 개인정보 처리방침(iOS·Android): 기기 내 저장, 수집 없음, 운영체제 백업, 온디바이스 진단, 로컬 알림 안내.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://support-minsukkim.github.io/mandra/privacy.html">
   <style>
@@ -22,12 +22,13 @@
   <nav><a href="index.html">← Mandra</a></nav>
   <main>
     <h1>Mandra 개인정보 처리방침</h1>
-    <p><strong>시행일:</strong> 2026-08-28</p>
-    <p class="note">요약: Mandra는 계정이 없고, 서버가 없으며, 어떤 개인정보도 수집·전송하지 않습니다. 모든 데이터는 사용자의 기기 안에만 저장됩니다.</p>
+    <p><strong>시행일:</strong> 2026-10-23 (이전 버전: 2026-08-28)</p>
+    <p><a href="en/privacy.html">English</a></p>
+    <p class="note">요약: Mandra는 계정이 없고, 서버가 없으며, 개발자는 어떤 개인정보도 수집하지 않습니다. 데이터는 사용자의 기기에 저장되며, 운영체제의 백업 기능(iCloud·Google 백업)이 켜져 있으면 사용자 본인의 계정에 백업될 수 있습니다.</p>
 
     <h2>앱 및 개발자 정보</h2>
     <ul>
-      <li>앱: Mandra (iOS, 번들 ID <code>com.mandraapp.app</code>)</li>
+      <li>앱: Mandra (iOS·Android, 앱 ID <code>com.mandraapp.app</code>)</li>
       <li>개발자: Minsuk Kim (개인)</li>
       <li>문의: <a href="mailto:support.minsukkim@gmail.com">support.minsukkim@gmail.com</a></li>
     </ul>
@@ -36,26 +37,35 @@
     <p><strong>없습니다.</strong> Mandra는 회원가입·로그인이 없으며, 이름·이메일·전화번호·위치 등 어떠한 개인정보도 수집하지 않습니다. 광고 SDK, 분석(애널리틱스) SDK, 제3자 트래킹 도구를 사용하지 않습니다.</p>
 
     <h2>기기 안에서 생성·저장되는 데이터</h2>
-    <p>아래 데이터는 앱 기능을 위해 <strong>사용자 기기 안에만</strong> 저장되며, 외부로 전송되지 않습니다.</p>
+    <p>아래 데이터는 앱 기능을 위해 <strong>사용자 기기 안에</strong> 저장되며, 개발자의 서버나 제3자에게 전송되지 않습니다. (운영체제 백업은 아래 「운영체제 백업」을 참고하세요.)</p>
     <ul>
       <li>만다라트 데이터: 목표·세부 목표·실행 항목 텍스트, 색상 선택, 생성/수정 시각</li>
       <li>활동 기록: 실행 항목별 체크인 날짜(잔디 기록), 연속 기록(streak) 계산용 날짜</li>
       <li>프로필 표시 이름(선택 입력): 앱 안 인사말 표시에만 사용</li>
-      <li>앱 설정: 테마, 알림 시각, Live Activity 표시 여부 등</li>
-      <li>위젯·잠금화면(Live Activity) 표시용 스냅샷: 위 데이터의 요약본이 기기 안 App Group 저장소를 통해 위젯과 공유됩니다</li>
+      <li>앱 설정: 테마, 언어, 알림 시각, 잠금화면 표시 여부(iOS) 등</li>
+      <li>홈 화면 위젯·잠금화면(iOS Live Activity) 표시용 정보: 위 데이터의 요약본과 위젯에서 넘긴 페이지 위치가 기기 안에서만 위젯과 공유됩니다</li>
     </ul>
 
+    <h2>운영체제 백업</h2>
+    <p>Mandra 자체는 데이터를 외부로 보내지 않지만, 기기의 운영체제가 제공하는 백업 기능이 켜져 있으면 앱 데이터(만다라트·활동 기록·설정)가 <strong>사용자 본인의 계정</strong>에 백업될 수 있습니다.</p>
+    <ul>
+      <li>iOS: 기기의 iCloud 백업 또는 컴퓨터 백업</li>
+      <li>Android: Google 계정 자동 백업(기기 간 이전 포함). 위젯 페이지 위치·알림 예약 상태처럼 기기에만 의미 있는 정보는 백업에서 제외됩니다.</li>
+    </ul>
+    <p>이 백업은 Apple 또는 Google이 운영체제 기능으로 처리하며, 개발자는 백업 내용에 접근할 수 없습니다. 백업은 기기의 설정(iOS: 설정 → Apple 계정 → iCloud, Android: 설정 → 시스템 → 백업)에서 끄거나 삭제할 수 있습니다.</p>
+
     <h2>진단 데이터 (온디바이스)</h2>
-    <p>앱 안정성 개선을 위해 Apple의 MetricKit이 제공하는 크래시 진단을 <strong>기기 안에서만</strong> 수집·보관합니다. 이 진단은 자동으로 전송되지 않으며, 개발자에게 도달하는 유일한 경로는 사용자가 iOS 설정(개인정보 보호 및 보안 → 분석 및 향상)에서 Apple과의 공유에 동의한 경우 Apple이 제공하는 표준 절차뿐입니다.</p>
+    <p>iOS 앱은 앱 안정성 개선을 위해 Apple의 MetricKit이 제공하는 크래시 진단을 <strong>기기 안에서만</strong> 보관합니다. 이 진단은 자동으로 전송되지 않으며, 개발자에게 도달하는 유일한 경로는 사용자가 iOS 설정(개인정보 보호 및 보안 → 분석 및 향상)에서 Apple과의 공유에 동의한 경우 Apple이 제공하는 표준 절차뿐입니다. Android 앱은 별도의 진단 데이터를 수집하지 않습니다(사용자가 Android에서 공유에 동의한 경우 Google Play가 제공하는 표준 비정상 종료 통계만 해당).</p>
 
     <h2>알림</h2>
-    <p>체크인 리마인더·주간 리포트 등 모든 알림은 기기에서 예약되는 <strong>로컬 알림</strong>입니다. 푸시 서버를 사용하지 않습니다. 알림 권한은 선택 사항이며 iOS 설정에서 언제든 끌 수 있습니다.</p>
+    <p>체크인 리마인더·주간 리포트 등 모든 알림은 기기에서 예약되는 <strong>로컬 알림</strong>입니다. 푸시 서버를 사용하지 않습니다. 알림 권한은 선택 사항이며 기기 설정에서 언제든 끌 수 있습니다.</p>
 
     <h2>데이터 보관 및 삭제</h2>
     <ul>
-      <li>모든 데이터는 앱을 삭제하면 함께 삭제됩니다.</li>
+      <li>기기의 데이터는 앱을 삭제하면 함께 삭제됩니다.</li>
       <li>앱 안에서 만다라트 단위로 삭제할 수 있습니다.</li>
-      <li>서버에 사본이 없으므로 별도의 삭제 요청 절차가 필요하지 않습니다.</li>
+      <li>운영체제 백업에 남은 사본은 기기의 백업 설정에서 삭제할 수 있습니다.</li>
+      <li>개발자의 서버에는 사본이 없으므로 별도의 삭제 요청 절차가 필요하지 않습니다.</li>
     </ul>
 
     <h2>아동의 개인정보</h2>
@@ -64,8 +74,8 @@
     <h2>향후 변경 예정 기능 고지</h2>
     <p>다음 기능이 추가될 경우, 도입 전에 이 방침을 갱신하고 앱 업데이트 노트로 알립니다.</p>
     <ul>
-      <li><strong>iCloud 백업(옵트인)</strong>: 사용자가 켠 경우에만 Apple iCloud(비공개 데이터베이스)에 만다라트 데이터가 백업됩니다. 개발자는 해당 데이터에 접근할 수 없습니다.</li>
-      <li><strong>Pro 구독</strong>: 결제는 Apple App Store 결제 시스템으로만 처리되며, 개발자는 카드 정보 등 결제 수단 정보를 수집하지 않습니다.</li>
+      <li><strong>앱 자체 클라우드 동기화(옵트인)</strong>: 사용자가 켠 경우에만 사용자 본인의 클라우드 저장소(예: iOS의 iCloud 비공개 데이터베이스)에 만다라트 데이터가 동기화됩니다. 개발자는 해당 데이터에 접근할 수 없습니다.</li>
+      <li><strong>Pro 구독</strong>: 결제는 Apple App Store 또는 Google Play 결제 시스템으로만 처리되며, 개발자는 카드 정보 등 결제 수단 정보를 수집하지 않습니다.</li>
       <li><strong>AI 기능</strong>: 목표 분해 등 AI 기능 도입 시, 처리되는 텍스트 범위와 처리 위치를 이 방침에 명시합니다.</li>
     </ul>
 
